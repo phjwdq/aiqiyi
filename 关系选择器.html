@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>关系选择器</title>
+	<style>
+	/*#box的所以的子节点 .wrap 3个*/
+		#box > .wrap{
+			color: blue;
+		}
+
+		/*<每一个子>节点的下一个紧挨着的兄弟*/
+
+		#box > .wrap + .wrap{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<div id="box">
+		<div class="wrap">A</div>
+		<div class="wrap">B</div>
+		<div class="wrap">C</div>
+	</div>
+</body>
+</html>
