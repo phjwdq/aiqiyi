@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>position</title>
+	<style>
+		#box{
+			width: 500px;
+			height: 400px;
+			background-color: red;
+			position: relative;
+		}
+		.wrap1{
+			width: 200px;
+			height: 400px;
+			background-color: blue;
+		}
+		.wrap2{
+			width: 100px;
+			height: 400px;
+			background-color: yellow;
+			position: absolute;
+		}
+		/*注意 1.wrap1定位  再写wrap2，wrap2默认在父元素的0 0处
+		*2.wrap1不定位  在让wrap2定位 默认在父元素的最下方,并且仍然不占空间
+		*3.修改css中的类，进行查看*/
+	</style>
+</head>
+<body>
+	<div id="box">
+		<div class="wrap1"></div>
+		<div class="wrap2"></div>
+		<p>黑寡妇静安寺几个思路几个思路街坊四邻的感觉手里</p>
+	</div>
+</body>
+</html>
