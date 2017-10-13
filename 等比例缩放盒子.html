@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>等比例缩放盒子</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+	</style>
+</head>
+<body>
+	<!-- 1、用max-width来让宽度自适应。
+（因为设置为80%，所以用margin-left: 10%来让div居中显示）
+2、这里真正的高度是由 padding-bottom来实现
+（padding-bottom: 45%的宽高比例就是基于屏幕宽高100%的80%：45%）
+所以本身的height就设置为0，
+3、并且溢出的部分隐藏：overflow: hidden; -->
+	<div style="background-color: rgb(204, 204, 204); max-width: 100%; height: 0px; overflow: hidden; padding-bottom: 50%;">
+		<p>gsd白大褂根深蒂固规律还行</p>
+		
+            </div>
+</body>
+</html>
