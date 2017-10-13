@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>flex</title>
+	<style>
+		#box{
+			width: 100%;
+			height: 300px;
+			background-color: red;
+			display: flex;
+		}
+		.wrap2{
+			width: 200px;
+			height: 300px;
+			background-color: blue;
+		}
+		.wrap1{
+			height: 300px;
+			flex: 1;
+			background-color: yellow;
+		}
+	</style>
+</head>
+<body>
+	<div id="box">
+		<div class="wrap1"></div>
+		<div class="wrap2"></div>
+	</div>
+</body>
+</html>
